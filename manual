@@ -1,0 +1,95 @@
+# ================================================================================
+# PRONOSTIX - GUÍA DE USO Y MANUAL PEDAGÓGICO
+# Para los Roles de Profesor/Instructor, Estudiante/Aprendiz y Coordinador
+# ================================================================================
+
+Versión: 1.0
+Fecha: 27 de Octubre de 2026
+Proyecto: Pronostix - Plataforma Fácil de Pronósticos y Proyecciones
+
+Consulte también manual.md en este mismo directorio para ver el documento
+con formato Markdown y fórmulas completas.
+
+--------------------------------------------------------------------------------
+1. RESUMEN DE LA HERRAMIENTA
+--------------------------------------------------------------------------------
+Pronostix es una plataforma sencilla y completa para estimar el futuro usando
+datos reales o la opinión de expertos. Reúne en una sola pantalla:
+
+- 12 Métodos cuantitativos con datos del pasado (Promedios, Suavización, Holt,
+  Winter, Descomposición de temporadas y Regresión Causal).
+- 4 Métodos cualitativos basados en personas (Consenso en Grupo, Visión del Líder,
+  Comparación con el Pasado y Método Delphi).
+- Tabla comparativa con puesto (#1 al #12), % de error (MAPE), falla general (RMSE),
+  diferencia media (MAD) y control de desvío (Señal de rastreo).
+- Calificación automática de cada método con nota de 0 a 100 y letras (A+, A, B, C, D).
+- Análisis de la encuesta real sobre Inteligencia Artificial aplicada a 22 personas.
+- Descarga directa en Excel / CSV para tareas, talleres y reportes.
+
+--------------------------------------------------------------------------------
+2. GUÍA PARA EL PROFESOR / INSTRUCTOR
+--------------------------------------------------------------------------------
+Objetivo:
+Demostrar a los aprendices cómo estimar el futuro paso a paso y por qué algunos
+métodos fallan si los datos tienen subidas o temporadas.
+
+Paso a paso sugerido para la clase:
+1. Inicio (20 min):
+   Abrir el botón "Ver Mapa de Métodos" y explicar la diferencia entre tener
+   datos numéricos del pasado o tener que apoyarse en opiniones de personas.
+2. Demostración de retraso (40 min):
+   Cargar la serie con subida continua ("Encuesta IA: Personas que van respondiendo").
+   Mostrar cómo el Promedio Móvil Simple se queda siempre atrás y genera una señal
+   de desvío con advertencia ⚠️ (> +4). Luego activar el Método de Holt para ver
+   cómo acompaña la subida sin problemas y obtiene el Puesto #1 con nota A+.
+3. Demostración de temporadas (40 min):
+   Cargar "Ventas de Servicios de IA (16 Trimestres por Temporadas)" y mostrar cómo
+   Winter y la Descomposición capturan los picos de fin de año.
+4. Opiniones de expertos (20 min):
+   Entrar a la pestaña "Opiniones de Expertos" y probar el simulador del Método
+   Delphi, viendo cómo en 3 rondas las personas llegan a un acuerdo mutuo sin discutir
+   cara a cara.
+
+Explicación sencilla de las métricas:
+- % de Error (MAPE): El porcentaje promedio en que se equivoca el método. Menor es mejor.
+- Diferencia Media (MAD): Cuánto se desvió en promedio en unidades reales.
+- Error General (RMSE): Mide las fallas castigando fuertemente los errores grandes.
+- Control de Desvío (Señal de Rastreo): Muestra si el método tiende a calcular siempre
+  por debajo (número muy positivo) o siempre por arriba (número muy negativo).
+  El rango seguro es de -4 a +4; fuera de allí se marca con ⚠️.
+
+--------------------------------------------------------------------------------
+3. GUÍA PARA EL ESTUDIANTE / APRENDIZ
+--------------------------------------------------------------------------------
+Objetivo:
+Aprender a pronosticar con números reales sin enredarse en fórmulas complejas.
+
+Pasos sencillos para hacer tareas y talleres:
+Paso 1: Elige un ejemplo de datos en el menú superior (por ejemplo, la Encuesta de IA
+        o las Ventas por Temporadas).
+Paso 2: Mira la gráfica de líneas y la tabla comparativa. El método en el Puesto #1
+        es el ganador recomendado. Revisa que tenga nota A+ o A y que no tenga
+        señal de advertencia ⚠️.
+Paso 3: Si quieres ver las cuentas detalladas, haz clic en el ojo (👁) o en el nombre
+        del método. Podrás mover las barras deslizadoras para darle más o menos
+        peso a lo reciente y ver la resta de cada punto histórico paso a paso.
+Paso 4: Haz clic en el botón "Descargar Resultados en Excel / CSV" para guardar la
+        tabla completa y adjuntarla como evidencia a tu reporte o entrega.
+
+--------------------------------------------------------------------------------
+4. GUÍA PARA EL COORDINADOR DEL CURSO
+--------------------------------------------------------------------------------
+Pertinencia académica:
+Pronostix es aplicable a programas de Administración, Ingeniería, Contaduría,
+Logística, Mercadeo, Sistemas y Producción para la enseñanza de pronósticos de
+demanda, presupuestos y planeación de compras e inventario.
+
+Lo que el estudiante aprende a hacer:
+- Reconocer qué método usar según la forma de los datos (planos, con subida o con temporadas).
+- Comparar objetivamente métodos mediante el porcentaje de error y el control de sesgo.
+- Justificar decisiones de compras o inventarios con números reales y gráficas claras.
+
+Cómo auditar los trabajos entregados:
+1. Pedir el archivo CSV descargado por el aprendiz con la tabla comparativa.
+2. Verificar que el estudiante explique por qué el método ganador fue el mejor.
+3. Comprobar que haya revisado que la señal de rastreo esté en el rango seguro [-4, +4].

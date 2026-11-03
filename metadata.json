@@ -1,0 +1,6 @@
+{
+  "name": "Pronostix - Plataforma Fácil de Pronósticos y Proyecciones",
+  "description": "Herramienta sencilla para estimar el futuro con datos reales, comparar métodos de pronóstico y ver resultados paso a paso.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
